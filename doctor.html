@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doctor Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <img src="mydoc1.png" alt="Logo" class="logo">
+            <img src="img/mydoc1.png" alt="Logo" class="logo">
             <p id="username">Doctor's Name</p>
         </div>
     </header>
@@ -17,7 +18,7 @@
     <div class="dashboard">
         <div class="left-section">
             <button class="menu-button" id="homeBtn">Home</button>
-            <button class="menu-button" id="manageAppointmentsBtn">Manage Appointments</button>
+            <button class="menu-button" id="manageAppointmentsBtn">Manage</button>
         </div>
 
         <div class="right-section" id="dashboardContent">
@@ -29,6 +30,9 @@
         <p>Doctor's Dashboard.</p>
     </footer>
     
-    <script src="doctor.js"></script>
+
+    <script src="js/effects.js" type="module"></script>
+    <script src="js/doctor.js" type="module"></script>
+    
 </body>
 </html>
