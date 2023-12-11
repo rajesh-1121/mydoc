@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+/* Global Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header-container, .header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+
+header .logo {
+    height: 50px; /* Adjust the size of your logo */
+}
+
+header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+p{
+    color: black;
+    font-weight: 600;
+    font-family: monospace
+}
+
+.toggle-buttons button.active {
+    background-color: #007bff; /* Change this to your preferred active color */
+    color: white;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+    clear: both;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+footer .social-media a, footer .contact-info p {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer .social-media a:hover, footer .contact-info a:hover {
+    color: #007bff; /* Change hover color as needed */
+}
+
+footer .social-media a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+footer .social-media i {
+    margin-right: 8px;
+    font-size: 1.2em; /* Adjust icon size as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.notification.success {
+    border-color: green;
+    color: green;
+}
+
+.notification.error {
+    border-color: red;
+    color: red;
+}
+
+
+
+/* Additional Styling for the Container */
+.container {
+    padding-top: 80px; /* Adjust based on header height */
+    padding-bottom: 60px; /* Adjust based on footer height */
+}
+
+/* ... existing styles ... */
+
+/* Updated selector to include email and tel input types */
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ... remaining styles ... */
+
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.hidden {
+    display: none;
+}
+
+.special-link {
+    color: #00BFFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.left-section {
+    flex: 0 0 200px;
+    width: 20%;
+    background-color: #555;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-section {
+    flex: 1;
+    overflow: auto;
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #777;
+}
+
+.logo {
+    width: auto;
+}
+
+.menu-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #666;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #777;
+}
+.week {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.day {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Additional styling as required */

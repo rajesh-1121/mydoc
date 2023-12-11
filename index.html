@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" style="cursor: pointer;">
+                <img src="mydoc1.png" alt="Logo" class="logo">
+            </a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Toggle Buttons -->
+        <div class="toggle-buttons">
+            <button id="toPatientSection">Patient</button>
+            <button id="toDoctorSection">Doctor</button>
+        </div>
+    
+        <!-- Patient (User) Section -->
+        <div class="user_container" id="patientSection">
+            <!-- Patient Login Section -->
+            <div class="login-section" id="patientLoginSection">
+                <h1>LOGIN (Patient's)</h1>
+                <form id="patientLoginForm" method="post" action="login_patient.php">
+                    <input type="email" id="patientEmail" name="email" placeholder="Email" required>
+                    <input type="password" id="patientPassword" name="password" placeholder="Password" required>
+                    <input type="hidden" name="userType" value="patients">
+                    <button type="submit">Submit</button>
+                    <button type="button" id="patientSignupToggle">Signup</button>
+                   
+                </form>
+            </div>
+    
+            <!-- Patient Signup Section -->
+            <div class="signup-section hidden" id="patientSignupSection">
+                <h1>SIGNUP (Patient's)</h1>
+                <form id="patientSignupForm" method="POST" action="register_patient.php">
+                    <input type="text" id="patientName" name="name" placeholder="Full Name" required>
+                    <input type="email" id="patientSignupEmail" name="email" placeholder="Email Address" required>
+                    <input type="tel" id="patientMobileNumber" name="mobileNumber" placeholder="Mobile Number" required>
+                    <input type="password" id="patientNewPassword" name="password" placeholder="Password" required>
+                    <input type="hidden" name="userType" value="patients">
+                    <button type="submit">Submit</button>
+                    <button type="button" id="patientLoginToggle">Login</button>
+                   
+                </form>
+            </div>
+        </div>
+    
+        <!-- Doctor Section -->
+        <div class="doc_container hidden" id="doctorSection">
+            <!-- Doctor Login Section -->
+            <div class="login-section" id="doctorLoginSection">
+                <h1>LOGIN (Doctor's)</h1>
+                <form id="doctorLoginForm" method="POST" action="login_doctor.php">
+                    <input type="email" id="doctorEmail" name="email" placeholder="Email" required>
+                    <input type="password" id="doctorPassword" name="password" placeholder="Password" required>
+                    <input type="hidden" name="userType" value="doctors">
+                    <button type="submit">Submit</button>
+                    <button type="button" id="doctorSignupToggle">Signup</button>
+                   
+                </form>
+            </div>
+    
+            <!-- Doctor Signup Section -->
+            <div class="signup-section hidden" id="doctorSignupSection">
+                <h1>SIGNUP (Doctor's)</h1>
+                <form id="doctorSignupForm" method="POST" action="register_doctor.php">
+                    <input type="text" id="doctorName" name="name" placeholder="Name" required>
+                    <input type="email" id="doctorSignupEmail" name="email" placeholder="Email Address" required>
+                    
+                    <!-- Dropdown for selecting specialty -->
+                    <select id="doctorSpecialist" name="specialist" required>
+                        <option value="">Select Specialty</option>
+                        <option value="Mental">Mental</option>
+                        <option value="Physical">Physical</option>
+                        <option value="Allergy">Allergy</option>
+                    </select>
+                    
+                    <input type="tel" id="doctorPhone" name="phone" placeholder="Phone Number" required>
+                    <input type="password" id="doctorNewPassword" name="password" placeholder="Password" required>
+                    <input type="hidden" name="userType" value="doctors">
+                    <button type="submit">Submit</button>
+                    <button type="button" id="doctorLoginToggle">Login</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>HealthCare Center</p>
+                <p>123 Wellness Street, Healthy City, HC 12345</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@healthcarecenter.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ui-interactions.js"></script>
+    <script src="form-handling.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

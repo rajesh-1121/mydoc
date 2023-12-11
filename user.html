@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Additional CSS and JS files can be included here -->
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <img src="mydoc1.png" alt="Logo" class="logo">
+        <div class="user-info">
+            <span id="patientFullName"><!-- Full name will be loaded here --></span>
+        </div>
+    </div>
+</header>
+
+<div class="dashboard">
+    <div class="left-section">
+        <button class="menu-button" id="homeBtn">Home</button>
+        <button class="menu-button" id="infoFormBtn">Information Form</button>
+        <button class="menu-button" id="appointmentsBtn">Appointments</button>
+        <button id="signOutBtn" class="sign-out-button">Sign Out</button>
+    </div>
+
+    <div class="right-section" id="dashboardContent">
+        
+        <!-- Content will be dynamically loaded here based on the button clicked -->
+    </div>
+</div>
+
+<footer>
+    <p>Patient's Dashboard.</p>
+</footer>
+<script src="user.js"></script>
+</body>
+</html>
