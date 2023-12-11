@@ -1,0 +1,98 @@
+/* Mobile Styles (up to 600px) */
+@media (max-width: 600px) {
+    /* Header Styling */
+    .header-container, .header-nav {
+        padding: 5px 10px;
+        /* Adjust header styles for mobile */
+    }
+
+    header .logo {
+        height: 40px; /* Adjust logo size for mobile */
+    }
+
+    header nav a {
+        margin-left: 10px;
+        font-size: 0.9em; /* Adjust font size for mobile */
+    }
+
+    /* Container Styles */
+    .container {
+        padding: 20px 10px; /* Adjust padding for mobile */
+    }
+
+    button {
+        width: 80%; /* Make buttons wider for mobile */
+        font-size: medium; /* Adjust font size for mobile */
+    }
+
+    /* Footer Styling */
+    footer {
+        padding: 10px; /* Adjust footer padding for mobile */
+    }
+
+    footer .footer-content {
+        flex-direction: column; /* Stack social media and contact info vertically for mobile */
+        align-items: center; /* Center align content for mobile */
+    }
+
+    footer .social-media a, footer .contact-info p {
+        font-size: 0.8em; /* Adjust font size for mobile */
+    }
+
+    /* Additional Mobile Styles as Needed */
+}
+/* Mobile Styles (up to 600px) */
+@media (max-width: 600px) {
+
+    .dashboard{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    /* Header Styling */
+    .header-container {
+        padding: 10px; /* Adjust header padding for mobile */
+    }
+
+    .header-container .logo {
+        height: 30px; /* Adjust logo size for mobile */
+    }
+
+    .header-container #username {
+        font-size: 0.9em; /* Adjust font size for mobile */
+    }
+
+    /* Left Section Styling */
+    .left-section {
+        width: 80%;
+        flex: 0 0 100px;
+        margin: 10px 0;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-section .menu-button {
+        margin: 10px;
+        font-size: x-small;
+        margin-bottom: 5px;
+    }
+
+    /* Right Section Styling */
+    .right-section {
+        width: 80%;
+        margin: 10px 0; /* Adjust margin for mobile */
+    }
+
+    /* Footer Styling */
+    footer {
+        padding: 10px; /* Adjust footer padding for mobile */
+        text-align: center; /* Center-align text for mobile */
+    }
+
+    /* Additional Mobile Styles as Needed */
+}
+

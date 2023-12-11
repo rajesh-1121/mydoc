@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patient Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/animationStyles.css">
 </head>
 <body>
+    <div class="background-animation">
+        <div class="bubble-animation bubble-small"></div>
+<div class="bubble-animation bubble-medium"></div>
+<div class="bubble-animation bubble-large"></div>
+        <!-- Create bubbles here or via JavaScript -->
+    </div>
+    
+
+
     <!-- Header -->
     <header>
         <div class="header-container">
             <a href="index.html" style="cursor: pointer;">
-                <img src="mydoc1.png" alt="Logo" class="logo">
+                <img src="img/mydoc1.png" alt="Logo" class="logo">
             </a>
         </div>
     </header>
 
     <div class="container">
+
+
+
+
         <!-- Toggle Buttons -->
         <div class="toggle-buttons">
             <button id="toPatientSection">Patient</button>
@@ -28,8 +44,8 @@
         <div class="user_container" id="patientSection">
             <!-- Patient Login Section -->
             <div class="login-section" id="patientLoginSection">
-                <h1>LOGIN (Patient's)</h1>
-                <form id="patientLoginForm" method="post" action="login_patient.php">
+                <h2 style="color: #fc8e27;">LOGIN (Patient's)</h2>
+                <form id="patientLoginForm" method="post" action="php/login_patient.php">
                     <input type="email" id="patientEmail" name="email" placeholder="Email" required>
                     <input type="password" id="patientPassword" name="password" placeholder="Password" required>
                     <input type="hidden" name="userType" value="patients">
@@ -41,8 +57,8 @@
     
             <!-- Patient Signup Section -->
             <div class="signup-section hidden" id="patientSignupSection">
-                <h1>SIGNUP (Patient's)</h1>
-                <form id="patientSignupForm" method="POST" action="register_patient.php">
+                <h2 style="color: #fc8e27;">SIGNUP (Patient's)</h2>
+                <form id="patientSignupForm" method="POST" action="php/register_patient.php">
                     <input type="text" id="patientName" name="name" placeholder="Full Name" required>
                     <input type="email" id="patientSignupEmail" name="email" placeholder="Email Address" required>
                     <input type="tel" id="patientMobileNumber" name="mobileNumber" placeholder="Mobile Number" required>
@@ -59,8 +75,8 @@
         <div class="doc_container hidden" id="doctorSection">
             <!-- Doctor Login Section -->
             <div class="login-section" id="doctorLoginSection">
-                <h1>LOGIN (Doctor's)</h1>
-                <form id="doctorLoginForm" method="POST" action="login_doctor.php">
+                <h2>LOGIN (Doctor's)</h2>
+                <form id="doctorLoginForm" method="POST" action="php/login_doctor.php">
                     <input type="email" id="doctorEmail" name="email" placeholder="Email" required>
                     <input type="password" id="doctorPassword" name="password" placeholder="Password" required>
                     <input type="hidden" name="userType" value="doctors">
@@ -72,8 +88,8 @@
     
             <!-- Doctor Signup Section -->
             <div class="signup-section hidden" id="doctorSignupSection">
-                <h1>SIGNUP (Doctor's)</h1>
-                <form id="doctorSignupForm" method="POST" action="register_doctor.php">
+                <h2>SIGNUP (Doctor's)</h2>
+                <form id="doctorSignupForm" method="POST" action="php/register_doctor.php">
                     <input type="text" id="doctorName" name="name" placeholder="Name" required>
                     <input type="email" id="doctorSignupEmail" name="email" placeholder="Email Address" required>
                     
@@ -117,9 +133,11 @@
         </div>
     </footer>
 
-    <script src="ui-interactions.js"></script>
-    <script src="form-handling.js"></script>
-    <script src="index.js"></script>
+    <script src="js/ui-interactions.js"></script>
+    <script src="js/form-handling.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/animationHandler.js" type="module"></script>
+
 
 </body>
 </html>
